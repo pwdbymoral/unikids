@@ -10,8 +10,8 @@
     <script src="./assets/tailwindtheme.js"></script>
 </head>
 
-<body class="bg-stone-200">
-    <header class="bg-slate-300">
+<body class="bg-neutral-200">
+    <header class="bg-blue-100">
         <div
             class="container space-y-4 mx-auto px-4 py-4 flex flex-col items-center md:space-y-0 md:flex-row md:items-center md:justify-between">
 
@@ -24,31 +24,83 @@
         </div>
     </header>
     <main>
+        <div class="bg-primary">
+            <div class="container p-8 mx-auto">
+                <h2 class="text-2xl text-zinc-100 font-montserrat pb-2">
+                    NOSSOS <strong class="text-bold">VALORES</strong>
+                </h2>
+                <div class="space-y-2">
+                    <div class="bg-white rounded shadow-md p-4 flex justify-start gap-4">
+                        <img src="../public/icon_star.svg" alt="Ícone de uma constelação" class="">
+                        <div class="text-paragraph">
+                            <strong class="text-bold text-primary-dark">Educação inclusiva: </strong>
+                            <p>
+                                Todas as crianças são bem-vindas, cultivamos um ambiente de respeito e acolhimento.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded shadow-md p-4 flex justify-start gap-4">
+                        <img src="../public/icon_star.svg" alt="Ícone de uma constelação" class="">
+                        <div class="text-paragraph">
+                            <strong class="text-bold text-primary-dark">Aprendizado lúdico: </strong>
+                            <p>
+                                Aprendizagem divertida e prazerosa, com metodologias que estimulam a curiosidade e a
+                                criatividade.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded shadow-md p-4 flex justify-start gap-4">
+                        <img src="../public/icon_star.svg" alt="Ícone de uma constelação" class="">
+                        <div class="text-paragraph">
+                            <strong class="text-bold text-primary-dark">Desenvolvimento socioemocional: </strong>
+                            <p>
+                                Sabemos da importância do desenvolvimento emocional e promovemos atividades que ajudam as crianças a se conhecerem e se relacionarem.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="bg-white rounded shadow-md p-4 flex justify-start items-center gap-4">
+                        <img src="../public/icon_star.svg" alt="Ícone de uma constelação" class="">
+                        <div class="text-paragraph">
+                            <strong class="text-bold text-primary-dark">Foco na família: </strong>
+                            <p>
+                                A parceria com as famílias é essencial, por isso trabalhamos juntos para o desenvolvimento
+                                integral das crianças.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container mx-auto p-4 font-bold">
 
             <form class="bg-white rounded shadow-md p-4">
                 <h2 class="text-2xl text-primary mb-2">Solicite sua pré-matrícula</h2>
                 <div class="mb-4">
-                    <label for="nome-responsavel" class="text-gray-700">Nome completo do responsável</label>
+                    <label for="nome-responsavel" class="text-paragraph-light">Nome completo do responsável</label>
                     <input type="text" name="nome-responsavel" id="nome-responsavel"
-                        class="form-control w-full placeholder:text-gray-500 bg-stone-200 rounded" placeholder="Digite o nome completo">
-                </div>
-
-                <div class="mb-4">
-                    <label for="nome" class="text-gray-700">Nome completo do aluno</label>
-                    <input type="text" name="nome" id="nome" class="form-control w-full placeholder:text-gray-500 bg-stone-200 rounded"
+                        class="form-control w-full placeholder:text-gray-500 bg-stone-200 rounded"
                         placeholder="Digite o nome completo">
                 </div>
 
                 <div class="mb-4">
-                    <label for="data-nascimento" class="text-gray-700">Data de nascimento</label>
-                    <input type="date" name="data-nascimento" id="data-nascimento"
-                        class="form-control w-full placeholder:text-gray-500 bg-stone-200 rounded" placeholder="DD/MM/AAAA">
+                    <label for="nome" class="text-paragraph-light">Nome completo do aluno</label>
+                    <input type="text" name="nome" id="nome"
+                        class="form-control w-full placeholder:text-gray-500 bg-stone-200 rounded"
+                        placeholder="Digite o nome completo">
                 </div>
 
                 <div class="mb-4">
-                    <label for="sexo" class="text-gray-700">Sexo</label>
-                    <select name="sexo" id="sexo" class="form-control w-full placeholder:text-gray-500 bg-stone-200 rounded"
+                    <label for="data-nascimento" class="text-paragraph-light">Data de nascimento</label>
+                    <input type="date" name="data-nascimento" id="data-nascimento"
+                        class="form-control w-full placeholder:text-gray-500 bg-stone-200 rounded"
+                        placeholder="DD/MM/AAAA">
+                </div>
+
+                <div class="mb-4">
+                    <label for="sexo" class="text-paragraph-light">Sexo</label>
+                    <select name="sexo" id="sexo"
+                        class="form-control w-full placeholder:text-gray-500 bg-stone-200 rounded"
                         placeholder="Selecione seu sexo">
                         <option value="masculino">Masculino</option>
                         <option value="feminino">Feminino</option>
@@ -56,14 +108,16 @@
                 </div>
 
                 <div class="mb-4">
-                    <label for="telefone" class="text-gray-700">Telefone</label>
+                    <label for="telefone" class="text-paragraph-light">Telefone</label>
                     <input type="text" name="telefone" id="telefone"
-                        class="form-control w-full placeholder:text-gray-500 bg-stone-200 rounded" placeholder="(XX) XXXXX-XXXX">
+                        class="form-control w-full placeholder:text-gray-500 bg-stone-200 rounded"
+                        placeholder="(XX) XXXXX-XXXX">
                 </div>
 
                 <div class="mb-4">
-                    <label for="email" class="text-gray-700">Email</label>
-                    <input type="email" name="email" id="email" class="form-control w-full placeholder:text-gray-500 bg-stone-200 rounded"
+                    <label for="email" class="text-paragraph-light">Email</label>
+                    <input type="email" name="email" id="email"
+                        class="form-control w-full placeholder:text-gray-500 bg-stone-200 rounded"
                         placeholder="Digite seu email">
                 </div>
 
@@ -76,10 +130,10 @@
 
         <div class="container mx-auto p-4">
 
-            <div class="bg-white rounded shadow-md p-4">
+            <div class="bg-white rounded shadow-md p-8 md:p-4">
 
                 <h2 class="text-2xl text-primary mb-2 font-bold">Confira nossa galeria</h2>
-                <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 p-4">
+                <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 p-4">
                     <img class="mx-auto shadow-xl border-4 rounded border-secondary" src="../public/placeholder.jpeg"
                         alt="" class="">
                     <img class="mx-auto shadow-xl border-4 rounded border-secondary" src="../public/placeholder-2.jpg"
