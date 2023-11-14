@@ -7,6 +7,7 @@
     <title>Unikids</title>
     <link rel="shortcut icon" href="../public/favicon.ico" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./assets/tailwindtheme.js"></script>
 </head>
 
 <body class="bg-stone-200">
@@ -15,9 +16,9 @@
             class="container space-y-4 mx-auto px-4 py-4 flex flex-col items-center md:space-y-0 md:flex-row md:items-center md:justify-between">
 
             <img src="../public/UniKids 02.png" alt="Logo da Unikids" class="w-48">
-            <nav class="flex gap-4 text-lg text-blue-700">
+            <nav class="flex gap-4 text-lg text-primary">
                 <a href="">Início</a>
-                <a href="">Notícias</a>
+                <a href="">Blog</a>
                 <a href="./pages/contato/index.html">Contato</a>
             </nav>
         </div>
@@ -26,28 +27,28 @@
         <div class="container mx-auto p-4 font-bold">
 
             <form class="bg-white rounded shadow-md p-4">
-                <h2 class="text-2xl text-blue-700 mb-2">Solicite sua pré-matrícula</h2>
+                <h2 class="text-2xl text-primary mb-2">Solicite sua pré-matrícula</h2>
                 <div class="mb-4">
                     <label for="nome-responsavel" class="text-gray-700">Nome completo do responsável</label>
                     <input type="text" name="nome-responsavel" id="nome-responsavel"
-                        class="form-control w-full placeholder:text-gray-500" placeholder="Digite o nome completo">
+                        class="form-control w-full placeholder:text-gray-500 bg-stone-200 rounded" placeholder="Digite o nome completo">
                 </div>
 
                 <div class="mb-4">
                     <label for="nome" class="text-gray-700">Nome completo do aluno</label>
-                    <input type="text" name="nome" id="nome" class="form-control w-full placeholder:text-gray-500"
+                    <input type="text" name="nome" id="nome" class="form-control w-full placeholder:text-gray-500 bg-stone-200 rounded"
                         placeholder="Digite o nome completo">
                 </div>
 
                 <div class="mb-4">
                     <label for="data-nascimento" class="text-gray-700">Data de nascimento</label>
                     <input type="date" name="data-nascimento" id="data-nascimento"
-                        class="form-control w-full placeholder:text-gray-500" placeholder="DD/MM/AAAA">
+                        class="form-control w-full placeholder:text-gray-500 bg-stone-200 rounded" placeholder="DD/MM/AAAA">
                 </div>
 
                 <div class="mb-4">
                     <label for="sexo" class="text-gray-700">Sexo</label>
-                    <select name="sexo" id="sexo" class="form-control w-full placeholder:text-gray-500"
+                    <select name="sexo" id="sexo" class="form-control w-full placeholder:text-gray-500 bg-stone-200 rounded"
                         placeholder="Selecione seu sexo">
                         <option value="masculino">Masculino</option>
                         <option value="feminino">Feminino</option>
@@ -57,18 +58,18 @@
                 <div class="mb-4">
                     <label for="telefone" class="text-gray-700">Telefone</label>
                     <input type="text" name="telefone" id="telefone"
-                        class="form-control w-full placeholder:text-gray-500" placeholder="(XX) XXXXX-XXXX">
+                        class="form-control w-full placeholder:text-gray-500 bg-stone-200 rounded" placeholder="(XX) XXXXX-XXXX">
                 </div>
 
                 <div class="mb-4">
                     <label for="email" class="text-gray-700">Email</label>
-                    <input type="email" name="email" id="email" class="form-control w-full placeholder:text-gray-500"
+                    <input type="email" name="email" id="email" class="form-control w-full placeholder:text-gray-500 bg-stone-200 rounded"
                         placeholder="Digite seu email">
                 </div>
 
                 <div class="text-right">
                     <button type="submit"
-                        class="py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">Enviar</button>
+                        class="py-2 px-4 bg-primary-light text-white font-semibold rounded-lg shadow-md hover:bg-primary focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">Enviar</button>
                 </div>
             </form>
         </div>
@@ -77,26 +78,30 @@
 
             <div class="bg-white rounded shadow-md p-4">
 
-                <h2 class="text-2xl text-blue-700 mb-2 font-bold">Confira nossa galeria</h2>
+                <h2 class="text-2xl text-primary mb-2 font-bold">Confira nossa galeria</h2>
                 <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 p-4">
-                    <img class="mx-auto shadow-xl" src="../public/placeholder.jpeg" alt="" class="">
-                    <img class="mx-auto shadow-xl" src="../public/placeholder-2.jpg" alt="" class="">
-                    <img class="mx-auto shadow-xl" src="../public/placeholder-3.jpeg" alt="" class="">
-                    <img class="mx-auto shadow-xl" src="../public/placeholder-4.jpeg" alt="" class="">
+                    <img class="mx-auto shadow-xl border-4 rounded border-secondary" src="../public/placeholder.jpeg"
+                        alt="" class="">
+                    <img class="mx-auto shadow-xl border-4 rounded border-secondary" src="../public/placeholder-2.jpg"
+                        alt="" class="">
+                    <img class="mx-auto shadow-xl border-4 rounded border-secondary" src="../public/placeholder-3.jpeg"
+                        alt="" class="">
+                    <img class="mx-auto shadow-xl border-4 rounded border-secondary" src="../public/placeholder-4.jpeg"
+                        alt="" class="">
                 </div>
             </div>
 
         </div>
     </main>
-    <footer class="bg-yellow-500">
+    <footer class="bg-secondary">
         <div class="container flex justify-center px-4 py-4 gap-4 flex flex-col items-center text-sm text-zinc-800">
             <img src="../public/UniKids 01.png" alt="Logo da UniKids" class="w-16">
 
             <p class="mx-6">Educando e construindo um futuro cada vez melhor.</p>
             <div class="flex flex-col gap-2">
-                <a href="" class="w-20 border-b-2 border-blue-700">Início</a>
-                <a href="" class="border-b-2 border-blue-700">Notícias</a>
-                <a href="" class="border-b-2 border-blue-700">Contato</a>
+                <a href="" class="w-20 border-b-2 border-primary">Início</a>
+                <a href="" class="border-b-2 border-primary">Blog</a>
+                <a href="" class="border-b-2 border-primary">Contato</a>
             </div>
         </div>
     </footer>
