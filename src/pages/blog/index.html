@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="../../../public/favicon.ico" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="../../assets/tailwindtheme.js"></script>
+    <script src="../../assets/search.js"></script>
 </head>
 
 <body class="bg-neutral-200">
@@ -18,55 +19,104 @@
             <img src="../../../public/UniKids 02.png" alt="Logo da Unikids" class="w-48">
             <nav class="flex gap-4 text-lg text-primary">
                 <a href="../../../index.html">Início</a>
-                <a href="">Blog</a>
-                <a href="">Galeria</a>
+                <a href="#">Blog</a>
                 <a href="../contato/index.html">Contato</a>
             </nav>
         </div>
     </header>
-    <main>
+    <main class="pb-2 min-h-[80vh]">
+        <div class="flex flex-col items-center py-12 bg-primary">
+            <h2 class="text-3xl text-white font-montserrat">BLOG <strong class="font-bold">UNIKIDS</strong></h2>
+            <span class="text-white text-center">Confira nossos artigos, fotos e vídeos</span>
+            <div class="flex w-1/2 items-center mt-2">
+                <input type="search" id="input-busca" placeholder="Busque por tags" class="w-full rounded py-2 px-4" onchange="search(this)">
+            </div>
+        </div>
         <div class="container mx-auto p-4 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             <div class="bg-white rounded shadow-md lg:hover:scale-105 lg:hover:duration-200">
-                <img src="../../../public/placeholder.jpeg" alt="" class="rounded-t">
+                <img src="../../../public/news_encontro.jpg" alt="" class="h-64 w-full rounded-t">
                 <div class="p4 text-center pt-2 pb-4 px-4">
-                    <span class="text-primary-light pb-2">tag1, tag2</span>
-                    <h2 class="text-paragraph text-xl">25 alunos reprovaram esse ano</h2>
+                    <span class="tags text-primary-light pb-2">
+                        <img src="../../../public/icon_tag.svg" alt="Ícone de tag" class="w-4 h-4 inline mr-1">
+                        encontro, família
+                    </span>
+                    <h2 class="text-paragraph text-xl">Encontro entre professores e alunos
+                    </h2>
                     <p class="text-paragraph-light">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu tortor elementum, laoreet metus quis, venenatis mi. Sed convallis at nulla in luctus.
+                        O Encontro entre professores e alunos da Unikids foi um momento muito importante. Nossos docentes e estudantes puderam conversar e compartilhar experiências.
                     </p>
                 </div>
             </div>
             <div class="bg-white rounded shadow-md lg:hover:scale-105 lg:hover:duration-200">
-                <img src="../../../public/placeholder-2.jpg" alt="" class="rounded-t">
+                <img src="../../../public/news_moms.jpg" alt="" class="h-64 w-full rounded-t">
                 <div class="p4 text-center pt-2 pb-4 px-4">
-                    <span class="text-primary-light pb-2">tag1, tag2</span>
-                    <h2 class="text-paragraph text-xl">25 alunos reprovaram esse ano</h2>
+                    <span class="tags text-primary-light pb-2">
+                        <img src="../../../public/icon_tag.svg" alt="Ícone de tag" class="w-4 h-4 inline mr-1">
+                        família, festa</span>
+                    <h2 class="text-paragraph text-xl">Dia das mães</h2>
                     <p class="text-paragraph-light">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu tortor elementum, laoreet metus quis, venenatis mi. Sed convallis at nulla in luctus.
+                        As crianças da Unikids prepararam uma linda homenagem para as mamães. Elas cantaram músicas, fizeram apresentações e entregaram presentes feitos por elas mesmas.
                     </p>
                 </div>
             </div>
             <div class="bg-white rounded shadow-md lg:hover:scale-105 lg:hover:duration-200">
-                <img src="../../../public/placeholder-3.jpeg" alt="" class="rounded-t">
+                <img src="../../../public/news_folclore.jpg" alt="" class="h-64 w-full rounded-t">
                 <div class="p4 text-center pt-2 pb-4 px-4">
-                    <span class="text-primary-light pb-2">tag1, tag2</span>
-                    <h2 class="text-paragraph text-xl">25 alunos reprovaram esse ano</h2>
+                    <span class="tags text-primary-light pb-2">
+                        <img src="../../../public/icon_tag.svg" alt="Ícone de tag" class="w-4 h-4 inline mr-1">
+                        festa</span>
+                    <h2 class="text-paragraph text-xl">Dia do folclore</h2>
                     <p class="text-paragraph-light">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu tortor elementum, laoreet metus quis, venenatis mi. Sed convallis at nulla in luctus.
+                        A Unikids comemorou o Dia do Folclore com uma festa muito divertida. As crianças aprenderam sobre lendas, mitos e histórias do folclore brasileiro. Elas também brincaram, dançaram e se divertiram muito.
+                    </p>
+                </div>
+            </div>
+            <div class="bg-white rounded shadow-md lg:hover:scale-105 lg:hover:duration-200">
+                <img src="../../../public/news_science.jpg" alt="" class="h-64 w-full rounded-t">
+                <div class="p4 text-center pt-2 pb-4 px-4">
+                    <span class="tags text-primary-light pb-2">
+                        <img src="../../../public/icon_tag.svg" alt="Ícone de tag" class="w-4 h-4 inline mr-1">
+                        ciências</span>
+                    <h2 class="text-paragraph text-xl">Feira de ciências</h2>
+                    <p class="text-paragraph-light">
+                        A Feira de Ciências da Unikids foi um evento muito interessante. As crianças apresentaram seus projetos científicos para os pais e professores. Os projetos foram muito criativos e inovadores.
+                    </p>
+                </div>
+            </div>
+            <div class="bg-white rounded shadow-md lg:hover:scale-105 lg:hover:duration-200">
+                <img src="../../../public/news_emotions.jpeg" alt="" class="h-64 w-full rounded-t">
+                <div class="p4 text-center pt-2 pb-4 px-4">
+                    <span class="tags text-primary-light pb-2">
+                        <img src="../../../public/icon_tag.svg" alt="Ícone de tag" class="w-4 h-4 inline mr-1">
+                        artigo, educação</span>
+                    <h2 class="text-paragraph text-xl">A importância das emoções na educação</h2>
+                    <p class="text-paragraph-light">
+                        A Unikids acredita que as emoções são importantes para o desenvolvimento das crianças. Por isso, a escola promove atividades que ajudam as crianças a compreender e lidar com suas emoções.
+                    </p>
+                </div>
+            </div>
+            <div class="bg-white rounded shadow-md lg:hover:scale-105 lg:hover:duration-200">
+                <img src="../../../public/news_gincana.jpg" alt="" class="h-64 w-full rounded-t">
+                <div class="p4 text-center pt-2 pb-4 px-4">
+                    <span class="tags text-primary-light pb-2">
+                        <img src="../../../public/icon_tag.svg" alt="Ícone de tag" class="w-4 h-4 inline mr-1">
+                        esportes, gincana</span>
+                    <h2 class="text-paragraph text-xl">XV Gincana educativa</h2>
+                    <p class="text-paragraph-light">
+                        A XV Gincana Educativa da Unikids foi um sucesso! As crianças se divertiram muito participando das atividades. Elas também aprenderam coisas novas e desenvolveram habilidades importantes.
                     </p>
                 </div>
             </div>
         </div>
     </main>
     <footer class="bg-secondary">
-        <div class="container flex justify-center px-4 py-4 gap-4 flex flex-col items-center text-sm text-zinc-800">
+        <div
+            class="container mx-auto flex justify-center px-4 py-4 gap-4 flex flex-col items-center text-sm text-zinc-800">
             <img src="../../../public/UniKids 01.png" alt="Logo da UniKids" class="w-16">
-
             <p class="mx-6">Educando e construindo um futuro cada vez melhor.</p>
             <div class="flex flex-col gap-2">
                 <a href="" class="w-20 border-b-2 border-primary">Início</a>
                 <a href="" class="border-b-2 border-primary">Blog</a>
-                <a href="" class="border-b-2 border-primary">Galeria</a>
                 <a href="" class="border-b-2 border-primary">Contato</a>
             </div>
         </div>
