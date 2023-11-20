@@ -4,11 +4,11 @@ tailwind.config = {
             colors: {
                 primary:
                 {
-                    DEFAULT: '#1d4ed8',
+                    DEFAULT: '#0000ff',
                     light: '#3b82f6',
-                    dark: '#1e3a8a',
+                    dark: '#2a59a1',
                 },
-                secondary: '#eab308',
+                secondary: '#ffd12b',
                 paragraph: {
                     DEFAULT: '#171717',
                     light: '#404040',
